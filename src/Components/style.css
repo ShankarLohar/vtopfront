@@ -80,12 +80,18 @@ table {
     text-align: left;
     padding: 8px;
   }
-  
+  .onclick{
+    background-color: #ABA5BF;
+  }
   tr{
     background-color: #F2DEDE;
   }
   input{
     margin:10px;
+}
+button img{
+    height: 50%;
+    width: 100%;
 }
 img{
     height: 50%;

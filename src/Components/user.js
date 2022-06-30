@@ -2,8 +2,8 @@ import React,{useState} from 'react';
 import "./style.css";
 import myimg from "../assets/img/tick.jpg"
 function User() {
-  const [show1,setShow1]=useState(true)
-  const [show2,setShow2]=useState(true)
+  const [show1,setShow1]=useState(false)
+  const [show2,setShow2]=useState(false)
   return (
 <div className="hero">
   {/* deadline start */}
@@ -27,36 +27,41 @@ function User() {
             
           </td>
         </tr>
-        <tr>
-          <td></td>
-          <td>{
+        {
               show1?<>
+        <tr>
+          <td>Amount
+              <input type="text" placeholder="Amount" /></td>
+          <td>
               <br/>
-              Amount
-              <input type="text" placeholder="Amount" />
+              
               Document
               <input type="file" placeholder="upload" />
-            </>:null
-            }</td>
+            </td>
         </tr>
+        </>:null
+            }
         <tr>
           <td>SGST(9%)</td>
           <td>
           <button onClick={()=>setShow2(!show2)} defaultValue="SGST" ><img src={myimg} alt="My image" ></img></button>
           </td>
         </tr>
-        <tr>
-          <td></td>
-          <td>{
+        {
               show2?<>
+        <tr>
+
+          <td>Amount
+              <input type="text" placeholder="Amount" /></td>
+          <td>
               <br/>
-              Amount
-              <input type="text" placeholder="Amount" />
+              
               Document
               <input type="file" placeholder="upload" />
-            </>:null
-            }</td>
+            </td>
         </tr>
+        </>:null
+            }
       </tbody>
     </table>
   </div>
