@@ -81,17 +81,18 @@ table {
     padding: 8px;
   }
   .onclick{
-    background-color: #ABA5BF;
+    background-color: #F2DEDE;
   }
   tr{
     background-color: #F2DEDE;
+    text-align: center;
   }
   input{
     margin:10px;
 }
 button img{
     height: 50%;
-    width: 100%;
+    width: 125%;
 }
 img{
     height: 50%;
@@ -99,4 +100,5 @@ img{
 }
 button{
     border: none !important;
+    background-color:#F2DEDE ;
 }
